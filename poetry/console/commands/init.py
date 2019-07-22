@@ -276,7 +276,7 @@ The <info>init</info> command creates a basic <comment>pyproject.toml</> file in
             pair = pair.strip()
 
             if " " in pair:
-                name, version = pair.split(" ", 2)
+                name, version = pair.split(" ", 1)
                 result.append({"name": name, "version": version})
             else:
                 result.append({"name": pair})
